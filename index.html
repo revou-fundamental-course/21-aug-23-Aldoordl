@@ -3,30 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - SMKN 1 Purwosari</title>
-
+    <meta name="author" content="Aldoordl" />
+    <title>Welcome to SMKN 1 Purwosari</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="top">
         <div class="nav__logo">SMKN 1 PURWOSARI</div>
         <ul class="nav__links">
-          <li class="link"><a href="#">Explore</a></li>
-          <li class="link"><a href="#">Vission & Mission</a></li>
-          <li class="link"><a href="#">About</a></li>
-          <li class="link"><a href="#">Message Us</a></li>
+          <li class="link"><a href="" class="active" onclick="setTitle(this)">Explore</a></li>
+          <li class="link"><a href="#vm" onclick="setTitle(this)">Vission & Mission</a></li>
+          <li class="link"><a href="#" onclick="setTitle(this)">About</a></li>
+          <li class="link"><a href="#" onclick="setTitle(this)">Contact Us</a></li>
         </ul>
         <button class="btn">Dev Profile</button>
       </nav>
 
     <!-- Homepage -->
     <header>
-
-    </header>
+        <div class="section__container header__container">
+          <div class="header__image">
+            <img src="assets/school3.jpg" alt="header" />
+            <img src="assets/school4.jpg" alt="header" />
+          </div>
+          <div class="header__content">
+            <div>
+              <p class="sub__header">Clone Website - Not Official</p>
+              <h1>Hello, <span class="typing"><br />Welcome</h1>
+              <p class="section__subtitle">
+                You will get information about schools and child development through the website with a fresh look and modern.
+              </p>
+              <div class="action__btns">
+                <button class="btn">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     
+    <!-- Section -->
+    <section class="section__container major__container">
+        <div class="section__header">
+          <div>
+            <h2 class="section__title">Explore The Major</h2>
+            <p class="section__subtitle">
+              Explore The Professions Below. Here We Provide Several Professions, Namely:
+            </p>
+          </div>
+          <div class="major__nav">
+            <span><i class="ri-arrow-left-s-line"></i></span>
+            <span><i class="ri-arrow-right-s-line"></i></span>
+          </div>
+        </div>
+        <div class="major__grid">
+          <div class="major__card">
+            <img src="assets/vocation1.jpg" alt="major" />
+            <div class="major__details">
+              <p class="major__title">Machine Major</p>
+              <p class="major__subtitle">Machine</p>
+            </div>
+          </div>
+          <div class="major__card">
+            <img src="assets/vocation2.jpg" alt="major" />
+            <div class="major__details">
+              <p class="major__title">Mechatronics Major</p>
+              <p class="major__subtitle">Mechatronics</p>
+            </div>
+          </div>
+          <div class="major__card">
+            <img src="assets/vocation3.jpg" alt="major" />
+            <div class="major__details">
+              <p class="major__title">Agriculture Major</p>
+              <p class="major__subtitle">Agriculture</p>
+            </div>
+          </div>
+          <div class="major__card">
+            <img src="assets/vocation4.jpg" alt="major" />
+            <div class="major__details">
+              <p class="major__title">IT Major</p>
+              <p class="major__subtitle">Info Techno</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="visimisi" id="vm">
+        <div class="section__container visimisi__container">
+          <div class="image__visimisi">
+            <div class="visimisi__col">
+              <img src="assets/vm1.jpg" alt="visimisi" />
+            </div>
+            <div class="visimisi__col">
+              <img src="assets/vm2.jpg" alt="visimisi" />
+              <img src="assets/vm3.jpg" alt="visimisi" />
+            </div>
+          </div>
+          <div class="visimisi__content">
+            <div>
+              <h2 class="section__title">
+                Our Vission and Mission
+              </h2>
+              <p class="section__subtitle">
+                Our vision and mission is to realize the ideals of the nation and state to produce children who excel and have high human resources.
+              </p>
+              <button class="btn"><a href="#top">Back to Top</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="section__container about__container">
+          <h2 class="section__title">Best about package</h2>
+          <p class="section__subtitle">
+            Explore your suitable and dream places around the world. Here you can
+            find your right major.
+          </p>
+          <div class="about__grid">
+            <div class="about__card">
+              <img src="assets/about-1.jpg" alt="about" />
+              <div class="about__details">
+                <p>Wasserwerk Frelberg, Germany</p>
+                <div class="rating"><i class="ri-star-fill"></i> 4.2</div>
+                <div class="booking__price">
+                  <div class="price"><span>From</span> $300</div>
+                  <button class="book__now">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="about__card">
+              <img src="assets/about-2.jpg" alt="about" />
+              <div class="about__details">
+                <p>Patagonia, Argentina and Chile</p>
+                <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+                <div class="booking__price">
+                  <div class="price"><span>From</span> $450</div>
+                  <button class="book__now">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="about__card">
+              <img src="assets/about-3.jpg" alt="about" />
+              <div class="about__details">
+                <p>The Dolomites, Italy</p>
+                <div class="rating"><i class="ri-star-fill"></i> 4.7</div>
+                <div class="booking__price">
+                  <div class="price"><span>From</span> $400</div>
+                  <button class="book__now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view__all">
+            <button class="btn">View All</button>
+          </div>
+        </div>
+      </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>SMKN 1 PURWOSARI</h3>
+            <p>
+              Get a more fresh and modern experience. This website is inspired from several sources and developed by Aldoordl.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Support</h4>
+            <p>FAQs</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Address</h4>
+            <p>
+              <span>Address:</span> Jl. Pegangsaan 26, Kabupaten Pasuruan.
+            </p>
+            <p><span>Email:</span> info@smkn1pasuruan.com</p>
+            <p><span>Phone:</span> +62 876543210</p>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2023 Aldoordl.
+        </div>
+      </footer>
+
     <!-- Link JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" 
+    referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
