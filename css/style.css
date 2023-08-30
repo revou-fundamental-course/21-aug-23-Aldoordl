@@ -462,7 +462,7 @@ header {
 
 @media (width < 1200px) {
   .header__image img:nth-child(1) {
-    max-width: 300px;
+    max-width: 270px;
   }
 
   .header__image img:nth-child(2) {
@@ -479,7 +479,7 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
   .header__image {
-    min-height: 500px;
+    min-height: 400px;
   }
 
   .major__grid {
