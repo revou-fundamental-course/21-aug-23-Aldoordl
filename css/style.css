@@ -270,10 +270,18 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.about__container :is(.section__title, .section__subtitle, .view__all) {
+.about__container :is(.section__title, .section__subtitle) {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+
+.about__container .section__subtitle {
+  margin-bottom: 5em;
+}
+
+.about__container .section__title {
+  margin-top: 2em;
 }
 
 .about__grid {
@@ -380,8 +388,16 @@ header {
 
 .subscribe__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.form_title {
+  margin-bottom: 1em;
+}
+
+.form_text {
+  width: 18em;
 }
 
 .subscribe__form {
@@ -393,19 +409,80 @@ header {
 .subscribe__form form {
   width: 100%;
   max-width: 400px;
-  display: flex;
-  background-color: var(--extra-light);
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
   border-radius: 5rem;
 }
 
-.subscribe__form input {
+.subscribe__form input[type=email],
+.subscribe__form input[type=date] {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
   width: 100%;
   padding: 1rem;
+  margin-bottom: 10px;
   outline: none;
   border: none;
   border-radius: 5rem;
   font-size: 1rem;
+}
+
+.subscribe__form input[type=date] {
+  cursor: pointer;
+}
+
+.subscribe__form label {
+  cursor: pointer;
+}
+
+.subscribe__form input[type=radio] {
+  margin: 1em 0 1.5em 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+}
+
+.subscribe__form textarea {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.subscribe__form .btn_submit {
+  padding: 0.75rem 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subcribe__msg {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--extra-light);
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.subcribe__msg p:nth-child(1) {
+  margin-bottom: 1em;
 }
 
 .footer {

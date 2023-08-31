@@ -6,9 +6,7 @@
     <meta name="author" content="Aldoordl" />
     <title>Welcome to SMKN 1 Purwosari</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,8 +17,8 @@
         <ul class="nav__links">
           <li class="link"><a href="" class="active" onclick="setTitle(this)">Explore</a></li>
           <li class="link"><a href="#vm" onclick="setTitle(this)">Vission & Mission</a></li>
-          <li class="link"><a href="#" onclick="setTitle(this)">About</a></li>
-          <li class="link"><a href="#" onclick="setTitle(this)">Contact Us</a></li>
+          <li class="link"><a href="#abt" onclick="setTitle(this)">About</a></li>
+          <li class="link"><a href="#form" onclick="setTitle(this)">Contact Us</a></li>
         </ul>
         <button class="btn">Dev Profile</button>
       </nav>
@@ -48,7 +46,8 @@
       </header>
     
     <!-- Section -->
-    <section class="section__container major__container">
+    <section class="major">
+      <div class="section__container major__container">
         <div class="section__header">
           <div>
             <h2 class="section__title">Explore The Major</h2>
@@ -91,39 +90,76 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="visimisi" id="vm">
-        <div class="section__container visimisi__container">
-          <div class="image__visimisi">
-            <div class="visimisi__col">
-              <img src="assets/vm1.jpg" alt="visimisi" />
-            </div>
-            <div class="visimisi__col">
-              <img src="assets/vm2.jpg" alt="visimisi" />
-              <img src="assets/vm3.jpg" alt="visimisi" />
-            </div>
+      </div>
+    </section>
+    <section class="visimisi" id="vm">
+      <div class="section__container visimisi__container">
+        <div class="image__visimisi">
+          <div class="visimisi__col">
+            <img src="assets/vm1.jpg" alt="visimisi" />
           </div>
-          <div class="visimisi__content">
-            <div>
-              <h2 class="section__title">
-                Our Vission and Mission
-              </h2>
-              <p class="section__subtitle">
-                Our vision and mission is to realize the ideals of the nation and state to produce children who excel and have high human resources.
-              </p>
-              <button class="btn"><a href="#top">Back to Top</a></button>
-            </div>
+          <div class="visimisi__col">
+            <img src="assets/vm2.jpg" alt="visimisi" />
+            <img src="assets/vm3.jpg" alt="visimisi" />
           </div>
         </div>
-      </section>
-      <section class="about">
-        <div class="section__container about__container">
-          <h3 class="section__title">Hello, <span class="typing"></span></h3>
-          <p class="section__subtitle">
-            In SMKN 1 Purwosari, we are committed to providing an inspiring, inclusive, and high-quality educational environment. We are dedicated to creating a generation of future leaders who are broad-minded, creative, and deeply knowledgeable.
+        <div class="visimisi__content">
+          <div>
+            <h2 class="section__title">
+              Our Vission and Mission
+            </h2>
+            <p class="section__subtitle">
+              Our vision and mission is to realize the ideals of the nation and state to produce children who excel and have high human resources.
+            </p>
+            <button class="btn"><a href="#top">Back to Top</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="abt">
+      <div class="section__container about__container">
+        <h3 class="section__title">Hello, <span class="typing"></span></h3>
+        <p class="section__subtitle">
+          In SMKN 1 Purwosari, we are committed to providing an inspiring, inclusive, and high-quality educational environment. We are dedicated to creating a generation of future leaders who are broad-minded, creative, and deeply knowledgeable.
+        </p>
+      </div>
+    </section>
+    <section class="subscribe" id="form" data-section-title="Contact Us">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">"Be Part of Our School's Story!</h2>
+          <p class="form_text">
+            Subscribe now to receive exclusive insights, event invitations, and school highlights. Join us in shaping the future of education."
           </p>
         </div>
-      </section>
+        <div class="subscribe__form">
+          <form id="myForm">
+            <input type="email" id="email" placeholder="Your email here" />
+            <input type="date" id="date" />
+          
+            <input type="radio" id="contactChoice1" name="gender" value="Male" />
+            <label for="contactChoice1">Male</label>
+          
+            &nbsp;
+            &nbsp;
+          
+            <input type="radio" id="contactChoice2" name="gender" value="Female" />
+            <label for="contactChoice2">Female</label>
+          
+            <textarea id="message" rows="6" placeholder="Send a Message!"></textarea>
+            <button class="btn btn_submit" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="subcribe__msg">
+          <h2 class="form_title">Messages</h2>
+          <p>Current Time: <span id="sender-current-datetime"></span></p>
+          <p>Email: <span id="sender-email"></span></p>
+          <p>Birth Date: <span id="sender-bday-date"></span></p>
+          <p>Gender: <span id="sender-gender"></span></p>
+          <p>Messages: <span id="sender-msg"></span></p>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
         <div class="section__container footer__container">
@@ -142,7 +178,7 @@
           <div class="footer__col">
             <h4>Address</h4>
             <p>
-              <span>Address:</span> Jl. Pegangsaan 26, Kabupaten Pasuruan.
+              <span>Address:</span> Purwosari
             </p>
             <p><span>Email:</span> info@smkn1purwosari.com</p>
             <p><span>Phone:</span> +62 876543210</p>
